@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::controller(ExportExcelController::class)->group(function(){
     Route::get('index', 'index');    
-    Route::get('export/excel', 'export')->name('export.excel');
+    Route::get('export', 'export')->name('export.excel');
 });
